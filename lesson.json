@@ -1,0 +1,33 @@
+{
+  "title": "Make and Do",
+  "kicker": "Collocations · A2",
+  "intro": "<b>Make</b> and <b>do</b> are very common verbs in English, and they are easy to mix up. Let’s look at when to use each one.",
+  "sections": [
+    {
+      "icon": "🛠️",
+      "heading": "Use MAKE to create something",
+      "text": "We use <b>make</b> when we produce, build or create something new.",
+      "examples": [
+        "I <b>make</b> breakfast every morning.",
+        "She <b>made</b> a mistake.",
+        "We need to <b>make</b> a decision.",
+        "He wants to <b>make</b> money.",
+        "I’ll <b>make</b> a phone call."
+      ]
+    },
+    {
+      "icon": "✅",
+      "heading": "Use DO for actions and tasks",
+      "text": "We use <b>do</b> for jobs, tasks, activities and general actions.",
+      "examples": [
+        "I <b>do</b> my homework after school.",
+        "He <b>does</b> the dishes.",
+        "Please <b>do</b> your best.",
+        "She <b>does</b> yoga on Sundays.",
+        "What do you <b>do</b> for a living?"
+      ]
+    }
+  ],
+  "tip": "Not sure which one to choose? Ask yourself: <i>am I creating something new</i> (make) or <i>doing a task or activity</i> (do)?",
+  "buttonText": "Start quiz"
+}
