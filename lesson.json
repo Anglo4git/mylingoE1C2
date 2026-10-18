@@ -1,189 +1,33 @@
 {
-  "title": "Gerunds and Infinitives",
-  "kicker": "Grammar · A2–B1",
-  "intro": "In English, one verb can be followed by another verb in different forms. Learn when to use a gerund (verb + <b>-ing</b>) and when to use an infinitive (<b>to + base verb</b>). The first verb or expression often determines the form of the next verb.",
+  "title": "Make and Do",
+  "kicker": "Collocations · A2",
+  "intro": "<b>Make</b> and <b>do</b> are very common verbs in English, and they are easy to mix up. Let’s look at when to use each one.",
   "sections": [
     {
-      "icon": "📘",
-      "heading": "1. What is a gerund?",
-      "text": "A <b>gerund</b> is a verb ending in <b>-ing</b> that works like a noun. It can name an activity, action or experience.",
+      "icon": "🛠️",
+      "heading": "Use MAKE to create something",
+      "text": "We use <b>make</b> when we produce, build or create something new.",
       "examples": [
-        "<b>Swimming</b> is good exercise.",
-        "I enjoy <b>reading</b> novels.",
-        "She is interested in <b>learning</b> English."
+        "I <b>make</b> breakfast every morning.",
+        "She <b>made</b> a mistake.",
+        "We need to <b>make</b> a decision.",
+        "He wants to <b>make</b> money.",
+        "I’ll <b>make</b> a phone call."
       ]
     },
     {
-      "icon": "🎯",
-      "heading": "2. What is an infinitive?",
-      "text": "An infinitive is usually formed with <b>to + the base form of a verb</b>, such as to eat, to study or to improve.",
+      "icon": "✅",
+      "heading": "Use DO for actions and tasks",
+      "text": "We use <b>do</b> for jobs, tasks, activities and general actions.",
       "examples": [
-        "I want <b>to improve</b> my English.",
-        "Patrick decided <b>to study</b> harder.",
-        "We came <b>to help</b> our friends."
-      ]
-    },
-    {
-      "icon": "🌱",
-      "heading": "3. Gerunds as the subject of a sentence",
-      "text": "A gerund or gerund phrase can come at the beginning of a sentence and act as its subject. A gerund subject normally takes a singular verb.",
-      "examples": [
-        "<b>Running</b> is a great workout.",
-        "<b>Reading new books</b> helps you learn vocabulary.",
-        "<b>Eating too much sugar</b> can damage your teeth."
-      ]
-    },
-    {
-      "icon": "🧩",
-      "heading": "4. Gerunds after certain verbs",
-      "text": "Some verbs are normally followed by a gerund. Learn the verb and its pattern together: <b>enjoy doing, avoid doing, finish doing, keep doing</b> and <b>practise doing</b>.",
-      "examples": [
-        "I enjoy <b>reading</b> novels.",
-        "Patrick finished <b>cleaning</b> his room.",
-        "The students practise <b>speaking</b> English every day."
-      ]
-    },
-    {
-      "icon": "🗣️",
-      "heading": "5. Gerund phrases after verbs",
-      "text": "A gerund phrase includes the -ing form and any words that complete its meaning. The extra words do not change the gerund pattern.",
-      "examples": [
-        "I enjoy <b>shopping with my friends</b>.",
-        "My parents prefer <b>eating dinner at home</b>.",
-        "She avoids <b>using her phone during lessons</b>."
-      ]
-    },
-    {
-      "icon": "🏷️",
-      "heading": "6. Gerunds after the verb be",
-      "text": "A gerund can follow <b>is, are, was</b> or <b>were</b> to identify an activity, hobby, duty or mistake.",
-      "examples": [
-        "My favourite hobby is <b>hiking</b>.",
-        "One of your duties is <b>taking notes during meetings</b>.",
-        "His biggest mistake was <b>trusting the wrong person</b>."
-      ]
-    },
-    {
-      "icon": "👂",
-      "heading": "7. Gerunds after verbs of perception",
-      "text": "After verbs such as <b>see, hear, watch</b> and <b>feel</b>, an object can be followed by a gerund to describe an action in progress.",
-      "examples": [
-        "I saw you <b>talking to the manager</b>.",
-        "We heard the neighbours <b>arguing last night</b>.",
-        "She felt an insect <b>crawling on her arm</b>."
-      ]
-    },
-    {
-      "icon": "👥",
-      "heading": "8. Gerunds after possessives",
-      "text": "A possessive adjective or possessive noun can come before a gerund to show who performs the activity.",
-      "examples": [
-        "He doesn't enjoy <b>my singing</b>.",
-        "<b>Her cooking</b> is simple but delicious.",
-        "<b>The baby's crying</b> woke me up."
-      ]
-    },
-    {
-      "icon": "🔗",
-      "heading": "9. Gerunds after prepositions",
-      "text": "When a verb follows a preposition, it normally takes the <b>-ing</b> form. Common examples include after, before, without and by.",
-      "examples": [
-        "They left without <b>saying goodbye</b>.",
-        "I went to the gym after <b>finishing my work</b>.",
-        "You can improve your English by <b>taking a course</b>."
-      ]
-    },
-    {
-      "icon": "🔄",
-      "heading": "10. Gerunds after phrasal verbs and expressions",
-      "text": "Some phrasal verbs and fixed expressions are followed by a gerund. Notice that <b>to</b> in <b>look forward to</b> is a preposition, so it is followed by -ing.",
-      "examples": [
-        "She kept on <b>trying</b> despite the difficulties.",
-        "We ended up <b>cancelling the picnic</b> because of the bad weather.",
-        "I look forward to <b>meeting you next week</b>."
-      ]
-    },
-    {
-      "icon": "🚀",
-      "heading": "11. Infinitives after certain verbs",
-      "text": "Some verbs are normally followed by an infinitive. Common examples include <b>want, hope, decide, plan, need</b> and <b>promise</b>.",
-      "examples": [
-        "I want <b>to improve</b> my English.",
-        "Patrick decided <b>to study</b> harder.",
-        "Do you hope <b>to participate</b> in the competition?"
-      ]
-    },
-    {
-      "icon": "🧱",
-      "heading": "12. Infinitives after an object",
-      "text": "Some verbs follow the pattern <b>verb + object + to + base verb</b>. The object tells us who is expected, encouraged or asked to do the action.",
-      "examples": [
-        "They encouraged the students <b>to speak English</b>.",
-        "The teacher asked Moussa <b>to explain his answer</b>.",
-        "The manager expects us <b>to arrive on time</b>."
-      ]
-    },
-    {
-      "icon": "🎯",
-      "heading": "13. Infinitives to express purpose",
-      "text": "An infinitive can explain the purpose of an action. It often answers the question <b>Why?</b>",
-      "examples": [
-        "I study hard <b>to pass my examinations</b>.",
-        "She saves money <b>to buy a laptop</b>.",
-        "The government built a clinic <b>to improve public health</b>."
-      ]
-    },
-    {
-      "icon": "💡",
-      "heading": "14. Infinitives after adjectives",
-      "text": "An infinitive often follows an adjective to explain how easy, difficult, important or enjoyable an action is.",
-      "examples": [
-        "It is important <b>to practise every day</b>.",
-        "Mathematics is difficult <b>to understand</b>.",
-        "The football match was exciting <b>to watch</b>."
-      ]
-    },
-    {
-      "icon": "❓",
-      "heading": "15. Infinitives after question words",
-      "text": "Question words such as <b>what, where, when, who, how</b> and <b>which</b> can be followed by an infinitive in certain expressions.",
-      "examples": [
-        "I don't know <b>how to solve this problem</b>.",
-        "Please tell me <b>where to meet you</b>.",
-        "She hasn't decided <b>what to study at university</b>."
-      ]
-    },
-    {
-      "icon": "📦",
-      "heading": "16. Infinitives after enough and words such as nothing",
-      "text": "An infinitive can follow expressions such as <b>adjective + enough</b>, <b>enough + noun</b>, and <b>nothing/something + to do</b>.",
-      "examples": [
-        "She is old enough <b>to travel alone</b>.",
-        "There is nothing <b>to worry about</b>.",
-        "We have enough money <b>to buy the tickets</b>."
-      ]
-    },
-    {
-      "icon": "⚖️",
-      "heading": "17. Infinitives after too + adjective",
-      "text": "The pattern <b>too + adjective/adverb + to + verb</b> often expresses a limitation or problem.",
-      "examples": [
-        "The bag is too heavy <b>to carry</b>.",
-        "He was too tired <b>to continue working</b>.",
-        "The water is too hot <b>to drink</b>."
-      ]
-    },
-    {
-      "icon": "🔍",
-      "heading": "18. Verbs that can take both forms",
-      "text": "Some verbs can take a gerund or an infinitive. Sometimes the meaning is similar; with verbs such as remember, stop and try, the meaning can change.",
-      "examples": [
-        "I remember <b>meeting</b> our new teacher. (I remember a past event.)",
-        "Remember <b>to lock</b> the door. (Do not forget this task.)",
-        "He stopped <b>to answer</b> the phone. (He paused another activity.)"
+        "I <b>do</b> my homework after school.",
+        "He <b>does</b> the dishes.",
+        "Please <b>do</b> your best.",
+        "She <b>does</b> yoga on Sundays.",
+        "What do you <b>do</b> for a living?"
       ]
     }
   ],
-  "tip": "Learn each verb together with its usual pattern: enjoy doing, decide to do, without doing and important to do. After a preposition, use -ing. To explain purpose, use to + base verb. Remember that some verbs can take both forms, sometimes with a change in meaning.",
+  "tip": "Not sure which one to choose? Ask yourself: <i>am I creating something new</i> (make) or <i>doing a task or activity</i> (do)?",
   "buttonText": "Start quiz"
 }
