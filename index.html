@@ -10,7 +10,7 @@
 :root{
   --blue:#166534; --blue-dark:#0f3f24; --blue-soft:#e3f1e8;
   --ink:#17212b; --muted:#6b7280; --line:#e5e7eb;
-  --bg:#f3f8f4; --card:#fff; --good:#42BA96; --bad:#DF4759;
+  --bg:#f3f8f4; --card:#fff; --good:#B7C83D; --bad:#FF1744;
   --shadow:0 10px 30px rgba(23,33,43,.08);
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -55,17 +55,17 @@ button{font:inherit}
 .option:disabled{cursor:default}
 .key{width:28px;height:28px;border-radius:9px;background:#f0f2f4;color:#66707a;display:grid;place-items:center;
   font-size:10px;font-weight:600;flex:0 0 28px}
-.option.correct{border-color:var(--good);background:#EAF8F2;box-shadow:0 0 0 2px rgba(66,186,150,.12);animation:correctGrow .58s cubic-bezier(.2,.85,.25,1.2) both}
+.option.correct{border-color:var(--good);background:#F5F8DE;box-shadow:0 0 0 2px rgba(183,200,61,.18);animation:correctGrow .58s cubic-bezier(.2,.85,.25,1.2) both}
 .option.correct .key{background:var(--good);color:#fff;animation:correctKeyPop .5s cubic-bezier(.2,.85,.25,1.25) .04s both}
-@keyframes correctGrow{0%{transform:scale(1)}45%{transform:scale(1.045);box-shadow:0 0 0 7px rgba(66,186,150,.18),0 12px 28px rgba(66,186,150,.16)}72%{transform:scale(1.018)}100%{transform:scale(1);box-shadow:0 0 0 2px rgba(66,186,150,.12)}}
+@keyframes correctGrow{0%{transform:scale(1)}45%{transform:scale(1.045);box-shadow:0 0 0 7px rgba(183,200,61,.28),0 12px 28px rgba(183,200,61,.22)}72%{transform:scale(1.018)}100%{transform:scale(1);box-shadow:0 0 0 2px rgba(183,200,61,.18)}}
 @keyframes correctKeyPop{0%{transform:scale(1)}55%{transform:scale(1.16) rotate(-3deg)}100%{transform:scale(1) rotate(0)}}
-.option.wrong{border-color:var(--bad);background:#FFF0F2;animation:shake .35s}
+.option.wrong{border-color:var(--bad);background:#FFF0F3;animation:shake .35s}
 .option.wrong .key{background:var(--bad);color:#fff}
 @keyframes shake{25%{transform:translateX(-5px)}50%{transform:translateX(5px)}75%{transform:translateX(-3px)}}
 .feedback{display:none;border-radius:18px;padding:14px 16px;margin-top:14px;font-size:13px;line-height:1.5}
 .feedback.show{display:block}
-.feedback.good{background:#EAF8F2;color:#176B4D;border:1px solid #B7E8D4}
-.feedback.bad{background:#FFF0F2;color:#9F2638;border:1px solid #F6C1CA}
+.feedback.good{background:#F5F8DE;color:#46520B;border:1px solid #DCE69A}
+.feedback.bad{background:#FFF0F3;color:#B00020;border:1px solid #FF9BAE}
 .feedback strong{display:block;margin-bottom:4px}
 .actions{display:flex;justify-content:center;margin-top:18px}
 .next{display:none;border:0;background:var(--blue);color:#fff;font-weight:900;padding:14px 30px;border-radius:999px;box-shadow:0 5px 0 var(--blue-dark);cursor:pointer}
@@ -280,10 +280,40 @@ correctAudio.preload = "auto";
 correctAudio.volume = 0.82;
 
 function playCorrectSound(){
+  // Generate the success chime with Web Audio so it works without loading an MP3.
+  // This runs directly inside the answer-button click, which is important on iOS Safari.
   try {
-    correctAudio.currentTime = 0;
-    correctAudio.play().catch(()=>{});
-  } catch(e) {}
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    if (!AudioCtx) {
+      const fallback = new Audio(CORRECT_AUDIO_DATA);
+      fallback.volume = 0.9;
+      const attempt = fallback.play();
+      if (attempt && typeof attempt.catch === 'function') attempt.catch(()=>{});
+      return;
+    }
+    const ctx = new AudioCtx();
+    const startAt = ctx.currentTime;
+    const notes = [659.25, 783.99, 987.77]; // bright, rising success chime
+    notes.forEach((frequency, index) => {
+      const start = startAt + index * 0.095;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(frequency, start);
+      gain.gain.setValueAtTime(0.0001, start);
+      gain.gain.exponentialRampToValueAtTime(0.18, start + 0.018);
+      gain.gain.exponentialRampToValueAtTime(0.0001, start + 0.27);
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start(start);
+      osc.stop(start + 0.29);
+    });
+    const resumed = ctx.resume();
+    if (resumed && typeof resumed.catch === 'function') resumed.catch(()=>{});
+    setTimeout(() => { try { ctx.close(); } catch(e) {} }, 850);
+  } catch(e) {
+    // Keep quiz interaction working if a browser blocks audio.
+  }
 }
 
 function playWrongSound(){
